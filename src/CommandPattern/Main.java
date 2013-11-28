@@ -1,7 +1,5 @@
 package CommandPattern;
 
-import java.rmi.Remote;
-
 /**
  * Created with IntelliJ IDEA.
  * User: kalkin2
@@ -11,78 +9,38 @@ import java.rmi.Remote;
  */
 public class Main {
 
-
     public static void main(String[] args) {
 
          //커맨트 패턴
-         //구현 : 스마트폰
+         //구현 : 뮤직앱
 
-
+        //1.invoker 역할
         Phone phone = new Phone();
 
-
-        //앱
+        //2.reciver 객체
         NaverMusic naverMusic = new NaverMusic();
-        DaumMap daumMap = new DaumMap();
 
-        //command객체
+        //3.커맨드 객체를 생성. 이때 리시버를 전달.
         NaverMusic_MyMusicPlayCommand mymusicPlay = new NaverMusic_MyMusicPlayCommand(naverMusic);
-        //NaverMusic_Top100PlayCommand top100Play = new NaverMusic_MyMusicPlayCommand(naverMusic);
 
+        //4.커맨드 객체를 인보커한테 전달
         phone.choiceApplication(mymusicPlay);
         phone.runApplication();
 
-        //NaverMusic_Top100PlayCommand top100Play = new NaverMusic_Top100PlayCommand (naverMusic);
-       // phone.choiceApplication(top100Play);
+        //3.커맨드 객체를 생성. 이때 리시버를 전달.
+        NaverMusic_Top100PlayCommand top100Play = new NaverMusic_Top100PlayCommand (naverMusic);
+
+        //4.커맨드 객체를 인보커한테 전달
+        phone.choiceApplication(top100Play);
+        phone.runApplication();
+
+
+
+
+
 
 
 
     }
 
-
-    private static class Phone {
-        Command command ;
-
-        public void choiceApplication(Command Command) {
-            command = Command;
-
-        }
-
-        public void runApplication() {
-            command.excute();
-
-        }
-    }
-
-    private static class NaverMusic {
-
-        public void MyMusicPlay(){
-            System.out.print("나의 리스트 재생");
-        };
-        public void top100MusicPlay(){
-            System.out.print("상위 100 리스트  재생...");
-        };
-        public void radioPlay(){
-
-            System.out.print("라디오 재생 ...");
-        };
-
-    }
-
-    private static class DaumMap {
-    }
-
-    private static class NaverMusic_MyMusicPlayCommand implements Command{
-
-        NaverMusic  NaverMusic;
-        public NaverMusic_MyMusicPlayCommand(NaverMusic naverMusic) {
-            NaverMusic = naverMusic;
-
-        }
-
-        @Override
-        public void excute() {
-            NaverMusic.MyMusicPlay();
-        }
-    }
 }
