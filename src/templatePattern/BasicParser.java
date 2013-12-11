@@ -11,7 +11,7 @@ abstract class BasicParser {
 
     //템플릿 메소드
     //이 메소드는 파싱하기 위한 일반적은 알고리즘을 제공하한다.
-    public void parseDataAndGenerateOutput()
+    final public void parseDataAndGenerateOutput()
     {
         readData();
         processData();

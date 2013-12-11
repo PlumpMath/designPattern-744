@@ -9,12 +9,12 @@ package templatePattern;
  */
 public class CSVDataParser extends BasicParser{
     @Override
-    void readData() {
+    protected void readData() {
         System.out.println("csv 파일로 부터 데이터를 읽습니다......");
     }
 
     @Override
-    void processData() {
+   protected void processData() {
         System.out.println("csv파일을 가공합니다....");
     }
 }

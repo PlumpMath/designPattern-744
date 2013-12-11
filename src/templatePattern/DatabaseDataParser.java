@@ -11,12 +11,12 @@ public class DatabaseDataParser extends BasicParser{
 
 
     @Override
-    void readData() {
+    protected void readData() {
         System.out.println("DB로부터 데이터를  읽습니다.........");
     }
 
     @Override
-    void processData() {
+    protected void processData() {
         System.out.println("DB 데이터를 가공합니다...........");
     }
 }
