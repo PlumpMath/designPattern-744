@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a8542fb-61af-44ae-bbcc-e8c41b7a8923" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/compositePattern/Main.java" afterPath="$PROJECT_DIR$/src/compositePattern/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/compositePattern/Medic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="design_pattern.iws" />
@@ -34,7 +34,7 @@
     <file path="$PROJECT_DIR$/src/CommandPattern2/ArrayList.java" changelist="4a8542fb-61af-44ae-bbcc-e8c41b7a8923" time="1385627088866" ignored="false" />
     <file path="/CommandStack.java" changelist="4a8542fb-61af-44ae-bbcc-e8c41b7a8923" time="1385627297447" ignored="false" />
     <file path="/Hot.java" changelist="4a8542fb-61af-44ae-bbcc-e8c41b7a8923" time="1385629198147" ignored="false" />
-    <file path="/Dummy.txt" changelist="4a8542fb-61af-44ae-bbcc-e8c41b7a8923" time="1387417114838" ignored="false" />
+    <file path="/Dummy.txt" changelist="4a8542fb-61af-44ae-bbcc-e8c41b7a8923" time="1387417299438" ignored="false" />
     <file path="/Client.java" changelist="4a8542fb-61af-44ae-bbcc-e8c41b7a8923" time="1386241132839" ignored="false" />
     <file path="/CSVDataParser.java" changelist="4a8542fb-61af-44ae-bbcc-e8c41b7a8923" time="1386772699009" ignored="false" />
     <file path="/DatabaseDataParser.java" changelist="4a8542fb-61af-44ae-bbcc-e8c41b7a8923" time="1386772728785" ignored="false" />
@@ -788,7 +788,11 @@
       <created>1387417116325</created>
       <updated>1387417116325</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="patteern">
+      <created>1387417311245</created>
+      <updated>1387417311245</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
