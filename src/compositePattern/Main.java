@@ -12,23 +12,26 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //마린, 파이어팻, 메딕을 각각 컨트롤 한다. (개별로 컨트롤)
         Marine marine = new Marine();//leaf1
         marine.selectUnit();
         FireBat fireBat =new FireBat();//leaf2
+        fireBat.selectUnit();
         Medic medic = new Medic();//leaf3
+        medic.selectUnit();
 
 
-        System.out.println("================================");
+        System.out.println("==========복합객체(composite)로 컨트롤1==============");
         ShortCut shortcut1 = new ShortCut();
         shortcut1.add(marine);
-        shortcut1.add(fireBat);
+        shortcut1.add(medic);
         shortcut1.selectUnit();
 
-        System.out.println("================================");
+        System.out.println("==========복합객체(composite)로 컨트롤2==============");
 
         ShortCut shortcut2 = new ShortCut();
         shortcut2.add(fireBat);
-        shortcut2.add(marine);
+        shortcut2.add(medic);
         shortcut2.selectUnit();
     }
 
