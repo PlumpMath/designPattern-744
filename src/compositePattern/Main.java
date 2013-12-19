@@ -15,7 +15,7 @@ public class Main {
         Marine marine = new Marine();//leaf1
         marine.selectUnit();
         FireBat fireBat =new FireBat();//leaf2
-        // Medic medic = new Medic();//leaf3
+        Medic medic = new Medic();//leaf3
 
 
         System.out.println("================================");
