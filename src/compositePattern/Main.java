@@ -5,7 +5,7 @@ package compositePattern;
  * User: kalkin2
  * Date: 2013. 12. 19.
  * Time: 오전 12:11
- * To change this template use File | Settings | File Templates.
+ * 컴포지트 패턴을 설명하기 위해 스타크래프트의 유닛객체와(개별객체) 단축키로 그룹지정(복합객체)으로 설명한다
  */
 public class Main {
 
